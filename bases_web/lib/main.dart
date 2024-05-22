@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:bases_web/ui/counter_page.dart';
+import 'package:bases_web/ui/pages/counter_page.dart';
 
 void main() => runApp(MyApp());
 
