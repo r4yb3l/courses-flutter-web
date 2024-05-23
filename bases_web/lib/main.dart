@@ -1,3 +1,5 @@
+import 'package:bases_web/ui/pages/counter_provider_page.dart';
+import 'package:bases_web/ui/pages/grid_view_page.dart';
 import 'package:flutter/material.dart';
 import 'package:bases_web/ui/pages/counter_page.dart';
 
@@ -9,9 +11,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Material App',
-      initialRoute: 'stateful',
+      initialRoute: '/stateful',
       routes: {
-        'stateful': (context) => const CounterPage(),
+        '/stateful': (context) => const CounterPage(),
+        '/provider': (context) => const CounterProviderPage(),
+        '/grid': (context) => GridViewPage(),
       },
       home: Scaffold(
         appBar: AppBar(
